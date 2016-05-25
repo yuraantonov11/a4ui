@@ -1,0 +1,21 @@
+{
+  "name": "a4ui",
+  "homepage": "https://github.com/yuraantonov11/a4ui",
+  "authors": [
+    "Yuriy Antonov <yuraantonov11@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-icons": "^2.2.3",
+    "material-design-lite": "^1.1.3"
+  }
+}
