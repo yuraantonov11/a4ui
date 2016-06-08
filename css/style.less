@@ -9,8 +9,8 @@
       .mdl-layout-title{
         font:  bold 28px "Roboto", "Helvetica", "Arial", sans-serif;
       }
-      .mdl-button{
-        margin-left: 50px;
+      .header-button{
+        margin-left: 3%;
         //min-width: @sidebar-width;
       }
     }
@@ -35,6 +35,13 @@
           padding: 0;
         }
       }
+      .mdl-navigation__link {
+        border-left: 3px solid transparent;
+      }
+      .mdl-navigation__link:hover {
+        background-color: inherit;
+        border-left: 3px solid #a3a0a0;
+      }
     }
   }
   .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header, .mdl-grid.demo-content {
@@ -56,5 +63,8 @@
   .mdl-layout__header, .mdl-layout__header-row{
     min-height: @sidebar-width;
     height: @sidebar-width;
+  }
+  .mdl-button .mdl-badge[data-badge]::after {
+    right: -15px;
   }
 }
