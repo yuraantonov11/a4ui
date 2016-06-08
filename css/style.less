@@ -1,11 +1,21 @@
 @sidebar-width: 60px;
-.mdl-layout__container .my-layout {
-  header.demo-header.mdl-layout__header {
+.mdl-layout__container .mdl-layout.my-layout {
+  header.mdl-layout__header {
     margin-left: 0;
     padding-left: @sidebar-width;
     width: 100%;
+    .mdl-layout__header-row{
+      padding: 20px;
+      .mdl-layout-title{
+        font:  bold 28px "Roboto", "Helvetica", "Arial", sans-serif;
+      }
+      .mdl-button{
+        margin-left: 50px;
+        //min-width: @sidebar-width;
+      }
+    }
   }
-  div.demo-drawer.mdl-layout__drawer {
+  div.mdl-layout__drawer {
     width: @sidebar-width;
     overflow-y: visible !important;
     button {
@@ -14,12 +24,15 @@
         font-size: 45px;
       }
     }
-    nav.demo-navigation.mdl-navigation {
+    nav.mdl-navigation {
       height: 100%;
       padding-top: 0;
       header {
         .mdl-button {
-          height: 65px;
+          height: @sidebar-width;
+          width: @sidebar-width;
+          min-width: @sidebar-width;
+          padding: 0;
         }
       }
     }
@@ -28,7 +41,7 @@
     margin-left: @sidebar-width;
     width: ~'calc(100% - @{sidebar-width})' !important;
   }
-  .mdl-layout--fixed-drawer > .mdl-layout__content {
+  main.mdl-layout__content {
     margin-left: @sidebar-width !important;
   }
   .mdl-button--icon {
@@ -39,5 +52,9 @@
   }
   .mdl-navigation .mdl-navigation__link {
     padding: 17px 14px;
+  }
+  .mdl-layout__header, .mdl-layout__header-row{
+    min-height: @sidebar-width;
+    height: @sidebar-width;
   }
 }

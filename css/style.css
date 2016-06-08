@@ -1,39 +1,56 @@
-.mdl-layout__container .my-layout header.demo-header.mdl-layout__header {
+.mdl-layout__container .mdl-layout.my-layout header.mdl-layout__header {
   margin-left: 0;
   padding-left: 60px;
   width: 100%;
 }
-.mdl-layout__container .my-layout div.demo-drawer.mdl-layout__drawer {
+.mdl-layout__container .mdl-layout.my-layout header.mdl-layout__header .mdl-layout__header-row {
+  padding: 20px;
+}
+.mdl-layout__container .mdl-layout.my-layout header.mdl-layout__header .mdl-layout__header-row .mdl-layout-title {
+  font: bold 28px "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.mdl-layout__container .mdl-layout.my-layout header.mdl-layout__header .mdl-layout__header-row .mdl-button {
+  margin-left: 50px;
+}
+.mdl-layout__container .mdl-layout.my-layout div.mdl-layout__drawer {
   width: 60px;
   overflow-y: visible !important;
 }
-.mdl-layout__container .my-layout div.demo-drawer.mdl-layout__drawer button {
+.mdl-layout__container .mdl-layout.my-layout div.mdl-layout__drawer button {
   width: 100%;
 }
-.mdl-layout__container .my-layout div.demo-drawer.mdl-layout__drawer button .header-btn-plus {
+.mdl-layout__container .mdl-layout.my-layout div.mdl-layout__drawer button .header-btn-plus {
   font-size: 45px;
 }
-.mdl-layout__container .my-layout div.demo-drawer.mdl-layout__drawer nav.demo-navigation.mdl-navigation {
+.mdl-layout__container .mdl-layout.my-layout div.mdl-layout__drawer nav.mdl-navigation {
   height: 100%;
   padding-top: 0;
 }
-.mdl-layout__container .my-layout div.demo-drawer.mdl-layout__drawer nav.demo-navigation.mdl-navigation header .mdl-button {
-  height: 65px;
+.mdl-layout__container .mdl-layout.my-layout div.mdl-layout__drawer nav.mdl-navigation header .mdl-button {
+  height: 60px;
+  width: 60px;
+  min-width: 60px;
+  padding: 0;
 }
-.mdl-layout__container .my-layout .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header,
-.mdl-layout__container .my-layout .mdl-grid.demo-content {
+.mdl-layout__container .mdl-layout.my-layout .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header,
+.mdl-layout__container .mdl-layout.my-layout .mdl-grid.demo-content {
   margin-left: 60px;
   width: calc(100% - 60px) !important;
 }
-.mdl-layout__container .my-layout .mdl-layout--fixed-drawer > .mdl-layout__content {
+.mdl-layout__container .mdl-layout.my-layout main.mdl-layout__content {
   margin-left: 60px !important;
 }
-.mdl-layout__container .my-layout .mdl-button--icon {
+.mdl-layout__container .mdl-layout.my-layout .mdl-button--icon {
   overflow: visible;
 }
-.mdl-layout__container .my-layout .material-icons {
+.mdl-layout__container .mdl-layout.my-layout .material-icons {
   font-size: 32px;
 }
-.mdl-layout__container .my-layout .mdl-navigation .mdl-navigation__link {
+.mdl-layout__container .mdl-layout.my-layout .mdl-navigation .mdl-navigation__link {
   padding: 17px 14px;
+}
+.mdl-layout__container .mdl-layout.my-layout .mdl-layout__header,
+.mdl-layout__container .mdl-layout.my-layout .mdl-layout__header-row {
+  min-height: 60px;
+  height: 60px;
 }

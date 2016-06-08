@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="my-layout mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
-    <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+    <header class="mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title">A4 Studio</span>
             <div class="mdl-layout-spacer"></div>
@@ -27,23 +27,44 @@
                 <i class="material-icons mdl-badge" data-badge="1">forum</i>
             </button>
             <button class="mdl-button mdl-js-button mdl-button--icon">
-                <i class="material-icons">receipt</i>
+                <i class="material-icons">assignment</i>
             </button>
         </div>
     </header>
-    <div class="demo-drawer mdl-layout__drawer mdl-color--white mdl-color-text--blue-grey-50">
+    <div class="mdl-layout__drawer mdl-color--white mdl-color-text--blue-grey-50">
         <nav class=" mdl-navigation mdl-color--blue-grey-800 mdl-layout--fixed-drawer">
             <header class="demo-drawer-header mdl-color--white">
                 <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons header-btn-plus mdl-color-text--teal-400">add</i></button>
             </header>
-            <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">search</i></a>
-            <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">edit</i></a>
-            <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">check</i></a>
-            <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">contact_mail</i></a>
-            <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">swap_vert</i></a>
+            <a id="search-link" class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">search</i></a>
+            <div class="mdl-tooltip mdl-tooltip--large" for="search-link">
+                search
+            </div>
+            <a id="edit-link" class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">edit</i></a>
+            <div class="mdl-tooltip mdl-tooltip--large" for="edit-link">
+                edit
+            </div>
+            <a id="check-link" class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">check</i></a>
+            <div class="mdl-tooltip mdl-tooltip--large" for="check-link">
+                check
+            </div>
+            <a id="contact_mail-link" class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">contact_mail</i></a>
+            <div class="mdl-tooltip mdl-tooltip--large" for="contact_mail-link">
+                Tooltip
+            </div>
+            <a id="swap_vert-link" class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">swap_vert</i></a>
+            <div class="mdl-tooltip mdl-tooltip--large" for="swap_vert-link">
+                Tooltip
+            </div>
             <div class="mdl-layout-spacer"></div>
-            <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">person_outline</i></a>
-            <a class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">system_update_alt</i><span class="visuallyhidden">Help</span></a>
+            <a id="person_outline-link" class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">person_outline</i></a>
+            <div class="mdl-tooltip mdl-tooltip--large" for="person_outline-link">
+                Tooltip
+            </div>
+            <a id="system_update_alt-link" class="mdl-navigation__link" href="#"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">system_update_alt</i><span class="visuallyhidden">Help</span></a>
+            <div class="mdl-tooltip mdl-tooltip--large" for="system_update_alt-link">
+                Tooltip
+            </div>
         </nav>
     </div>
     <main class="mdl-layout__content">
@@ -59,7 +80,7 @@
                 </div>
             </div>
             <div class="mdl-cell mdl-cell--8-col mdl-layout__header-row">
-                <div class="mdl-layout-title">Item # 807090</div>
+                <div class="mdl-layout-title">National Geographic Nature's Documental Video</div>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-navigation">
                 <button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons header-btn-plus">send</i></button>
@@ -146,19 +167,34 @@
             <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet graybox">
                 <div class="mdl-tabs mdl-js-tabs">
                     <div class="mdl-tabs__tab-bar">
-                        <a href="#tab1-panel" class="mdl-tabs__tab is-active">Tab 1</a>
-                        <a href="#tab2-panel" class="mdl-tabs__tab">Tab 2</a>
-                        <a href="#tab3-panel" class="mdl-tabs__tab">Tab 3</a>
+                        <a href="#tab1-panel" class="mdl-tabs__tab is-active">Overview</a>
+                        <a href="#tab2-panel" class="mdl-tabs__tab">Metadata</a>
+                        <a href="#tab3-panel" class="mdl-tabs__tab">Keyframes</a>
+                        <a href="#tab4-panel" class="mdl-tabs__tab">Logging</a>
+                        <a href="#tab5-panel" class="mdl-tabs__tab">Audit</a>
+                        <a href="#tab6-panel" class="mdl-tabs__tab">Access</a>
+                        <a href="#tab7-panel" class="mdl-tabs__tab">Tasks</a>
                     </div>
                     <div class="mdl-tabs__panel is-active graybox" id="tab1-panel">
-
-                        <img src="img/photo/man.png">
+                        <img src="img/photo/video.jpg">
                     </div>
                     <div class="mdl-tabs__panel graybox" id="tab2-panel">
                         <p>Tab 2 Content</p>
                     </div>
                     <div class="mdl-tabs__panel graybox" id="tab3-panel">
                         <p>Tab 3 Content</p>
+                    </div>
+                    <div class="mdl-tabs__panel graybox" id="tab4-panel">
+                        <p>Tab 4 Content</p>
+                    </div>
+                    <div class="mdl-tabs__panel graybox" id="tab5-panel">
+                        <p>Tab 5 Content</p>
+                    </div>
+                    <div class="mdl-tabs__panel graybox" id="tab6-panel">
+                        <p>Tab 6 Content</p>
+                    </div>
+                    <div class="mdl-tabs__panel graybox" id="tab7-panel">
+                        <p>Tab 7 Content</p>
                     </div>
                 </div>
             </div>
