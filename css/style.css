@@ -39,8 +39,7 @@
   background-color: inherit;
   border-left: 3px solid #a3a0a0;
 }
-.mdl-layout__container .mdl-layout.my-layout .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header,
-.mdl-layout__container .mdl-layout.my-layout .mdl-grid.demo-content {
+.mdl-layout__container .mdl-layout.my-layout .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header {
   margin-left: 60px;
   width: calc(100% - 60px) !important;
 }
