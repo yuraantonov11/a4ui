@@ -63,3 +63,9 @@
 .mdl-layout__container .mdl-layout.my-layout .mdl-button .mdl-badge[data-badge]::after {
   right: -15px;
 }
+.search-item img {
+  width: 100%;
+}
+.search-item.active {
+  background-color: #fff;
+}
