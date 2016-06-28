@@ -74,3 +74,30 @@
 .search-item.active{
   background-color: #fff;
 }
+
+.search-block {
+  position: absolute;
+  top: 0;
+  .filter-icon{
+    padding: 5px;
+  }
+  .search-field-filters {
+    max-height: 0;
+    overflow: hidden;
+    transition-property: initial;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    a {
+      display: block;
+      color: #455a64;
+      padding: 10px;
+      span{
+        margin-left: 50px;
+      }
+    }
+  }
+}
+.search-line input:focus ~ .search-field-filters{
+  max-height: 500px;
+}
