@@ -74,7 +74,15 @@
   top: 0;
 }
 .search-block .filter-icon {
-  padding: 5px;
+  min-width: 30px;
+  border-radius: 0;
+}
+.search-block #search {
+  height: 30px;
+  outline: none;
+}
+.search-block .search-icon {
+  border-radius: 0;
 }
 .search-block .search-field-filters {
   max-height: 0;
