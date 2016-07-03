@@ -79,12 +79,18 @@
   position: absolute;
   top: 0;
   .filter-icon{
-    padding: 5px;
-    width: 20px;
-    height: 20px;
+    padding: 0 5px;
     min-width: 20px;
   }
+  input{
+    height: 30px;
+    width: 400px;
+  }
+  .search-icon{
+    padding: 0 22px;
+  }
   .search-field-filters {
+    width: 300px;
     max-height: 0;
     overflow: hidden;
     transition-property: initial;
@@ -93,10 +99,13 @@
     transition-delay: 0s;
     a {
       display: block;
-      color: #455a64;
+      background: #787878;
       padding: 10px;
+      &:hover{
+        background: #929292;
+      }
       span{
-        margin-left: 50px;
+        margin-left: 30px;
       }
     }
   }
